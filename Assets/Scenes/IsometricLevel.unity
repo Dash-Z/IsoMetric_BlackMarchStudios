@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 528363c5c1cf6a7458140c6851c77b68, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff724fd868b7124d9832af32a08d80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleData: {fileID: 11400000, guid: 7536257e3fe48ba48b89d22c141489c1, type: 2}
+  obsdata: {fileID: 11400000, guid: 7536257e3fe48ba48b89d22c141489c1, type: 2}
   obstacle: {fileID: 3026066468504943480, guid: 9769375a444e2ad42b99f3a1f9e0d5b2, type: 3}
 --- !u!1 &1452311784
 GameObject:
