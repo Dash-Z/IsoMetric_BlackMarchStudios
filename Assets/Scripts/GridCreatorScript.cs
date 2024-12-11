@@ -5,12 +5,10 @@ public class GridManager : MonoBehaviour
     public GameObject tilePrefab; // Here, we instantiate the tile prefab
     public int width = 10;
     public int height = 10;
-
     void Start()
     {
         GenerateGrid();
     }
-
     void GenerateGrid()
     {
         for (int x = 0; x < width; x++)

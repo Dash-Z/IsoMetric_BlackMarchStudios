@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class ObstacleHandler : MonoBehaviour
 {
-    public ObstacleData obstacleData;
+    public ObstacleData obsdata;
     public GameObject obstacle;
-
     private void Start()
     {
         GenerateObstacles();
@@ -23,7 +22,7 @@ public class ObstacleHandler : MonoBehaviour
             for (int x = 0; x < 10; x++)
             {
                 int index = y * 10 + x; // We do this because we converted the 10x10 grid to a 100 size 1D Array
-                if (obstacleData.obstacles[index]) // Detecting if the tile has an obstacle and spawn a sphere slightly above it
+                if (obsdata.obstacles[index]) // Detecting if the tile has an obstacle and spawn a sphere slightly above it
                 {
                     Vector3 position = new Vector3(x, 0.5f, y);
                     Instantiate(obstacle, position, Quaternion.identity);

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TilePositionInfo : MonoBehaviour
 {
-    public Text tileposition; // Reference to UI Text
+    public Text tilepos; // Reference to UI Text
     void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -12,12 +12,12 @@ public class TilePositionInfo : MonoBehaviour
             TileData tileInfo = hit.collider.GetComponent<TileData>();
             if (tileInfo != null)
             {
-                tileposition.text = $"Tile Position: X={tileInfo.Xlocation}, Z={tileInfo.Zlocation}";
+                tilepos.text = $"Tile Position: X={tileInfo.Xlocation}, Z={tileInfo.Zlocation}";
             }
         }
         else
         {
-            tileposition.text = "";
+            tilepos.text = "";
         }
     }
 }
