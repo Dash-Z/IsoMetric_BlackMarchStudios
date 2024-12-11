@@ -12,7 +12,7 @@ public class TilePositionInfo : MonoBehaviour
             TileData tileInfo = hit.collider.GetComponent<TileData>();
             if (tileInfo != null)
             {
-                tileposition.text = $"Tile Position: X={tileInfo.gridX}, Z={tileInfo.gridZ}";
+                tileposition.text = $"Tile Position: X={tileInfo.Xlocation}, Z={tileInfo.Zlocation}";
             }
         }
         else
